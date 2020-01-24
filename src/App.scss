@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background: green;
+        width: 100%;
+        height: 40px;
+
+        li {
+            margin-right: 2rem;
+            a {
+                color: white;
+                &:hover {
+                    color: yellow;
+                }
+            }
+        }
+    }
+
+    main {
+        padding: 3rem;
+        color: gray;
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+
+    .page-title {
+        color: black;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .users {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .user {
+            width: calc(calc(100%/4) - 1rem);
+            border: 1px green solid;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            .user-img-container {
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .user-detail {
+                h3 {
+                    text-align: center;
+                    margin-top: .5rem;
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+
+    .register, .login {
+        display: flex;
+        flex-direction: column;
+        min-width: 80%;
+        margin: auto;
+
+        input, textarea {
+            margin-bottom: 1rem;
+            padding: .5rem;
+            outline: none;
+
+            &:focus {
+                border: 1px solid green;
+            }
+        }
+
+        button {
+            color: #ffffff;
+            background: green;
+            padding: .5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+                background: #ffffff;
+                color: green;
+                border: 1px solid green;
+            }
+        }
+    }
+
+    .profile {
+        width: 800px;
+        min-width: 800px;
+        max-width: 800px;
+        padding: 2rem;
+        border: 1px dotted black;
+        margin: auto;
+        display: flex;
+
+        .avatar {
+            margin-right: 1rem;
+            img {
+                width: 200px;
+                border-radius: 50%;
+                border: 1px solid red;
+            }
+        }
+    }
+}
