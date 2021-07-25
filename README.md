@@ -1,4 +1,4 @@
-Ini adalah bahan belajar di 30 hari Javascript pada http://asrul.dev/docs/30daysweb.
+Ini adalah bahan belajar di 30 hari Javascript pada https://asrul.dev/hari-21-deploy-netlify
 
 ### DEMO
 
